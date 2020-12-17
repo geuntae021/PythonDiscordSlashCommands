@@ -12,15 +12,10 @@ json = {
     "description": "Just Test"
 }
 
-# For authorization, you can use either your bot token 
+
 headers = {
     "Authorization": f"Bot {token}"
 }
-
-# or a client credentials token for your app
-# headers = {
-#     "Authorization": "Bearer 5mQHn5wDne1-NRY3CcCi2oMBw5MvwAPz"
-# }
 
 r = requests.post(url, headers=headers, json=json)
 print(r.content)
